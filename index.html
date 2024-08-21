@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Icons Stylesheet -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Weather Snippet</title>
+</head>
+<body>
+    <header class="container">
+        <div class="search-box">
+            <svg class="w-6 h-6 text-gray-800 dark:text-white map" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.8 13.938h-.011a7 7 0 1 0-11.464.144h-.016l.14.171c.1.127.2.251.3.371L12 21l5.13-6.248c.194-.209.374-.429.54-.659l.13-.155Z"/>
+            </svg>
+            <input type="text" placeholder="Enter the location...">
+            <button>
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/>
+                </svg>
+            </button>  
+        </div>
+        <section class="weather">
+            <div class="information">
+                <img src="Images/clear.png" alt="Clear Sky">        
+                <p class="temperature">0<sup>°C</sup></p>
+                <p class="description">Clear Sky</p>
+            </div>
+        </section> 
+        <section class="weather-detail">
+            <div class="humidity">
+                <i class='bx bx-water'></i>
+                <div class="text">
+                    <div class="info-humidity">
+                        <span>0%</span>
+                    </div>
+                    <p>Humidity</p>
+                </div>
+            </div>
+            <div class="wind">
+                <i class='bx bx-wind'></i>
+                <div class="text">
+                    <div class="info-wind">
+                        <span>0%</span>
+                    </div>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </section>
+        <section class="not-found">
+            <img src="Images/location error.webp" alt="Locaion not Found">
+            <p>Error, Location not Found !!</p>
+        </section>    
+        </header>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
