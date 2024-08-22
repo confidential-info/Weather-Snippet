@@ -27,28 +27,36 @@ search.addEventListener('click', ()  => {
         const des = document.querySelector(".information .description");
         const humidity = document.querySelector(".weather-detail .humidity span");
         const wind = document.querySelector(".weather-detail .wind span");
+        const backgound = document.querySelector("body");
         switch(json.weather[0].main)
         {
             case "Clear":
                 image.src = "Images/clear.png";
+                backgound.style.background = "url('Images/blue sky.jpg')";
                 break;
             case "Cloud":
                 image.src = "Images.cloud.png";
+                backgound.style.background = "url('Images/cloudy sky.jpg')";
                 break;
             case 'Haze':
                 image.src = "Images/mist.png"
+                backgound.style.background = "url('Images/mist weather.jpg')";
                 break;
             case 'Mist':
                 image.src = "Images/mist.png"
+                backgound.style.background = "url('Images/mist weather.jpg')";
                 break;
             case 'Rain':
                 image.src = "Images/rain.png";
+                backgound.style.background = "url('Images/rainy weather.jpg')";
                 break;
             case "Snow":
                 image.src = "Images/snow.png";
+                backgound.style.background = "url('Images/snow weather.jpg')";
                 break;
             default:
                 image.src = "Images/cloud.png";
+                backgound.style.background = "url('Images/blue sky.jpg')";
         }
         temp.innerHTML = `${parseInt(json.main.temp)}<sup>°C</sup>`;
         des.innerHTML = `${json.weather[0].description}`;
